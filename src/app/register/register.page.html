@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-back-button slot="start"></ion-back-button>
+    <ion-title>Register</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form #data="ngForm" (ngSubmit)="createUser(data)">
+    <ion-item>
+      <ion-label>Nom</ion-label>
+      <ion-input type="text" name="nom" ngModel placeholder="Votre nom"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Prenom</ion-label>
+      <ion-input type="text" name="prenom" ngModel placeholder="Votre prenom"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Age</ion-label>
+      <ion-input type="number" name="age" ngModel placeholder="Votre age"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Telephone</ion-label>
+      <ion-input type="number" name="tel" ngModel placeholder="Votre telephone"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Email</ion-label>
+      <ion-input type="text" name="email" ngModel placeholder="Votre email"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Password</ion-label>
+      <ion-input type="password" name="password" ngModel placeholder="Votre mot de pass"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Password</ion-label>
+      <ion-input type="password" name="c_password" ngModel placeholder="Confirmer votre mot de..."></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-button type="submit">Rengistrer</ion-button>
+    </ion-item>
+  </form>
+</ion-content>

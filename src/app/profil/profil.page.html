@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-back-button slot="start"></ion-back-button>
+    <ion-title>Profil</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label>Nom:</ion-label>
+    <ion-label>{{nom}}</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>Prenom:</ion-label>
+    <ion-label>{{prenom}}</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>Email:</ion-label>
+    <ion-label>{{email}}</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>Telephone:</ion-label>
+    <ion-label>{{telephone}}</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>Age:</ion-label>
+    <ion-label>{{age}}</ion-label>
+  </ion-item>
+  <ion-input routerLink="/changer-mot-pass" >Reinitialiser mot de pass</ion-input>
+</ion-content>
